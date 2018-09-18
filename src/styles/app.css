@@ -1,0 +1,52 @@
+body {
+  background-color: #1d1f21;
+  font-family: Monospace;
+  color: #adadad;
+}
+
+.App {
+  text-align: left;
+  margin: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: scroll;
+}
+
+.App p {
+  margin-top: 0;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App .terminal-bar {
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  margin-left: 0.7em;
+  font-size: 0.9em;
+  font-family: Monospace;
+  vertical-align: top;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
