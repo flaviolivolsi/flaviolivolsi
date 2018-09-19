@@ -43,6 +43,18 @@ export default [
           },
           {
             type: 'directory',
+            name: 'docs',
+            children: [
+              {
+                type: 'file',
+                name: 'Curriculum Vitae.pdf',
+                action: 'link',
+                target: '/docs/cv_flavio_li_volsi.pdf'
+              }
+            ]
+          },
+          {
+            type: 'directory',
             name: 'music',
             children: [
               {
