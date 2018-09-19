@@ -22,7 +22,7 @@ export default {
       }
       
       case /^ls(.*)/.test(command): {
-        return <List {...{ args: (command.match(/^cd (.*)/) || [])[1], state }} />
+        return <List {...{ args: (command.match(/^ls (.*)/) || [])[1], state }} />
       }
       
       case /^cd(.*)/.test(command): {
