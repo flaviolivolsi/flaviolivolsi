@@ -9,6 +9,40 @@ export default [
         children: [
           {
             type: 'directory',
+            name: 'books',
+            children: [
+              {
+                type: 'file',
+                name: 'Alexandre Dumas - The Count of Monte Cristo.epub'
+              },
+              {
+                type: 'file',
+                name: 'Ken Follett - The Pillars of the Earth.epub'
+              },
+              {
+                type: 'file',
+                name: 'Haruki Murakami - Norwegian Wood.epub'
+              },
+              {
+                type: 'file',
+                name: 'William Golding - Lord of the Flies.epub'
+              },
+              {
+                type: 'file',
+                name: 'J.D. Salinger - Catcher in the Rye.epub'
+              },
+              {
+                type: 'file',
+                name: 'Carlos Ruiz Zafón - The Shadow of the Wind.epub'
+              },
+              {
+                type: 'file',
+                name: 'Oscar Wilde - The Picture of Dorian Gray.epub'
+              }
+            ]
+          },
+          {
+            type: 'directory',
             name: 'music',
             children: [
               {
