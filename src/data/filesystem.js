@@ -133,11 +133,25 @@ export default [
           },
           {
             type: 'directory',
-            name: 'docs',
+            name: 'social',
             children: [
               {
                 type: 'file',
-                name: 'Curriculum Vitae.pdf'
+                name: 'Facebook',
+                action: 'link',
+                target: 'https://www.facebook.com/flaviolivolsi'
+              },
+              {
+                type: 'file',
+                name: 'Twitter',
+                action: 'link',
+                target: 'https://www.twitter.com/flaviolivolsi'
+              },
+              {
+                type: 'file',
+                name: 'LinkedIn',
+                action: 'link',
+                target: 'https://www.linkedin.com/in/flaviolivolsi'
               }
             ]
           }
