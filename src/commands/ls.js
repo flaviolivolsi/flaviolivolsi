@@ -16,15 +16,28 @@ const List = ({ args, state }) => {
       return <span></span>;
     }
 
-    return children.map((value, key) => 
-      <span key={key}>
-        {value.name}{" "}
-      </span>
-    );
+    return children.map((value, key) => {
+      if (value.action && value.action === 'link') {
+        return (
+          <span key={key}>
+            <a href={value.target} target="_blank">{value.name}</a>{" "}
+          </span>
+        );
+      }
+
+      return (
+        <span key={key}>
+          {value.name}{" "}
+        </span>
+      );
+    });
   };
 
   return (
-    <span>{formatDir()}</span>
+    <span className="ls">
+      {args && <p>Sorry, <i>ls</i> command doesn't support arguments yet. Use <i>cd [directory]</i> and then <i>ls</i> in order to display the content of another directory.</p>}
+      {formatDir()}
+    </span>
   );
 };
 
