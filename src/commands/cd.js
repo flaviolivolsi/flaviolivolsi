@@ -1,8 +1,17 @@
 import _ from 'lodash';
+import config from '../config';
 import utils from '../utils';
 
 const ChangeDirectory = ({ args, state, callback }) => {
   if (state.currentDirectory === '/' && args === '..') {
+    return null;
+  }
+
+  if (!args) {
+    callback({
+      currentDirectory: config.homeDir
+    });
+    
     return null;
   }
 
