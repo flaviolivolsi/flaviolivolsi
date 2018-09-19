@@ -59,7 +59,7 @@ export default [
             children: [
               {
                 type: 'file',
-                name: 'Led Zeppelin - Stairway To Heaven.mp3'
+                name: 'Led Zeppelin - Good Times Bad Times.mp3'
               },
               {
                 type: 'file',
@@ -68,6 +68,66 @@ export default [
               {
                 type: 'file',
                 name: 'Paolo Nutini - Iron Sky.mp3'
+              },
+              {
+                type: 'file',
+                name: 'Interpol - Specialist.mp3'
+              },
+              {
+                type: 'file',
+                name: 'The Doors - Riders On The Storm.mp3'
+              },
+              {
+                type: 'file',
+                name: 'Muse - Hysteria.mp3'
+              },
+              {
+                type: 'file',
+                name: 'David Bowie - Station To Station.mp3'
+              },
+              {
+                type: 'file',
+                name: 'Nick Cave & The Bad Seeds - O Children.mp3'
+              },
+              {
+                type: 'file',
+                name: 'Placebo - Pierrot The Clown.mp3'
+              },
+              {
+                type: 'file',
+                name: 'The Strokes - Taken For A Fool.mp3'
+              },
+              {
+                type: 'file',
+                name: 'Counting Crows - Colorblind.mp3'
+              },
+              {
+                type: 'file',
+                name: 'Mando Diao - Ochrasy.mp3'
+              },
+              {
+                type: 'file',
+                name: 'Fabrizio De André - Via del campo.mp3'
+              },
+              {
+                type: 'file',
+                name: 'Radiohead - Paranoid Android.mp3'
+              },
+              {
+                type: 'file',
+                name: 'Elvis Presley - Heartbreak Hotel.mp3'
+              },
+              {
+                type: 'file',
+                name: 'Guns N\' Roses - Civil War.mp3'
+              },
+              {
+                type: 'file',
+                name: 'Rage Against The Machine - Bulls On Parade.mp3'
+              },
+              {
+                type: 'file',
+                name: 'Iggy Pop - The Passenger.mp3'
               }
             ]
           },
