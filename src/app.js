@@ -57,7 +57,7 @@ class App extends Component {
   render() {    
     return (
       <div className="App terminal">
-        <p>Welcome to {config.fullName}'s portfolio!</p>
+        <p>Welcome to {config.fullName}'s website!</p>
 
         <div>
           <p>Available commands:</p>
