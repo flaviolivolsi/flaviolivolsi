@@ -28,6 +28,12 @@ body {
   margin-top: 0;
 }
 
+.terminal .github-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
 .terminal .prompt {
   margin: 0;
   font-weight: 700;
