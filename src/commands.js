@@ -12,6 +12,8 @@ export default {
     'cd [directory]'
   ],
   exec(command, state, callback) {
+    command = command.toLowerCase();
+    
     switch(true) {
       case /^whoami/.test(command): {
         return <Whoami />;
