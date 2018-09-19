@@ -4,7 +4,7 @@ body {
   color: #adadad;
 }
 
-.App {
+.terminal {
   text-align: left;
   margin: 1em;
   position: fixed;
@@ -12,30 +12,28 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  line-height: 18px;
   overflow-x: scroll;
 }
 
-.App p {
+.terminal a,
+.terminal a:link,
+.terminal a:visited,
+.terminal a:hover,
+.terminal a:active {
+  color: greenyellow;
+}
+
+.terminal p {
   margin-top: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.terminal .prompt {
+  margin: 0;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-.App .terminal-bar {
+.terminal .terminal-bar {
   border: 0;
   background-color: transparent;
   color: #fff;
@@ -46,7 +44,6 @@ body {
   vertical-align: top;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.terminal .ls > span {
+  margin-right: 15px;
 }

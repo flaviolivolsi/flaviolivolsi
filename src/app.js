@@ -56,7 +56,7 @@ class App extends Component {
   
   render() {    
     return (
-      <div className="App">
+      <div className="App terminal">
         <p>Welcome to {config.fullName}'s portfolio!</p>
 
         <div>
@@ -71,13 +71,15 @@ class App extends Component {
 
         {this.state.commands.map((command, key) =>
           <div key={key}>
-            <p>{config.user}@{config.host}:~$ {command}</p>
-            <p><strong>{this.state.outputs[key]}</strong></p>
+            <p className="prompt">{config.user}@{config.host}:~$ {command}</p>
+            <div className="output">
+              {this.state.outputs[key]}
+            </div>
           </div>
         )}
 
         <form onSubmit={evt => this.handleSubmit(evt)}>
-          <div>
+          <div className="prompt">
             <span>{config.user}@{config.host}:~$</span>
             <input
               className="terminal-bar"
