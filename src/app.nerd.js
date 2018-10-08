@@ -57,7 +57,7 @@ class App extends Component {
   render() {    
     return (
       <div className="App terminal">
-        <a href="https://github.com/flaviolivolsi/flaviolivolsi" target="_blank">
+        <a href="https://github.com/flaviolivolsi/flaviolivolsi" target="_blank" rel="noopener noreferrer">
           <img className="github-icon" src="/img/github-11-32.png" alt="Go to source code" />
         </a>
 
