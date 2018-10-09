@@ -19,8 +19,6 @@ const ChangeDirectory = ({ args, state, callback }) => {
   const currentDirNode = utils.listDir(state.currentDirectory);
 
   if (!_.isEqual(newDirNode, currentDirNode) || args === ".") {
-    console.log(newDirNode);
-
     callback({
       currentDirectory: newDir
     });
