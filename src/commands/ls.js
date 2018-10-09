@@ -4,7 +4,7 @@ import utils from '../utils';
 import filesystem from '../data/filesystem';
 
 /**
- * @TODO: list files according to args
+ * @TODO: show error when args leads to not existing dir
  */
 
 const List = ({ args = '.', state }) => {
