@@ -1,4 +1,5 @@
 import React from 'react';
+import path from 'path';
 import utils from '../utils';
 import filesystem from '../data/filesystem';
 
@@ -6,11 +7,13 @@ import filesystem from '../data/filesystem';
  * @TODO: list files according to args
  */
 
-const List = ({ args, state }) => {
+const List = ({ args = '.', state }) => {
   const formatDir = () => {
-    const children = state.currentDirectory === '/' ?
+    const directory = path.resolve(state.currentDirectory, args);
+
+    const children = directory === '/' ?
       filesystem : 
-      utils.listCurrentDir(state.currentDirectory).children;
+      utils.listDir(directory).children;
 
     if (!children) {
       return <span></span>;
@@ -35,7 +38,6 @@ const List = ({ args, state }) => {
 
   return (
     <span className="ls">
-      {args && <p>Sorry, <i>ls</i> command doesn't support arguments yet. Use <i>cd [directory]</i> and then <i>ls</i> in order to display the content of another directory.</p>}
       {formatDir()}
     </span>
   );

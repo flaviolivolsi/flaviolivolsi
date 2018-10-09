@@ -2,15 +2,15 @@ import filesystem from '../data/filesystem';
 import _ from 'lodash';
 
 export default {
-  listCurrentDir: (directory) => {
-    const currentDir = _.filter(directory.split('/'));
+  listDir: (directory) => {
+    const dir = _.filter(directory.split('/'));
 
-    if (!currentDir.length) {
+    if (!dir.length) {
       return;
     }
 
     const findNode = val => {
-      return currentDir[i] === val.name && val.type === 'directory';
+      return dir[i] === val.name && val.type === 'directory';
     };
 
     let directoryIsFound = true;

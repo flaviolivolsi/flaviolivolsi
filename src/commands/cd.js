@@ -1,38 +1,32 @@
-import _ from 'lodash';
-import config from '../config';
-import utils from '../utils';
+import path from "path";
+import _ from "lodash";
+import config from "../config";
+import utils from "../utils";
 
 const ChangeDirectory = ({ args, state, callback }) => {
-  if (state.currentDirectory === '/' && args === '..') {
-    return null;
-  }
-
   if (!args) {
     callback({
       currentDirectory: config.homeDir
     });
-    
+
     return null;
   }
 
   let error = null;
-  
-  const currentDir = _.filter(state.currentDirectory.split('/'));
-  const currentDirNode = utils.listCurrentDir(state.currentDirectory);
-  
-  let newDir = currentDir;
 
-  if (args === '..') {
-    newDir = _.dropRight(currentDir);
-  } else if (!_.isEqual(utils.listCurrentDir(`/${newDir.join('/')}/${args}`), currentDirNode)) {
-    newDir.push(args);
+  const newDir = path.resolve(state.currentDirectory, args);
+  const newDirNode = utils.listDir(newDir);
+  const currentDirNode = utils.listDir(state.currentDirectory);
+
+  if (!_.isEqual(newDirNode, currentDirNode) || args === ".") {
+    console.log(newDirNode);
+
+    callback({
+      currentDirectory: newDir
+    });
   } else {
     error = `cd: no such file or directory: ${args}`;
   }
-
-  callback({
-    currentDirectory: `/${newDir.join('/')}`
-  });
 
   return error;
 };
