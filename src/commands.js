@@ -8,8 +8,8 @@ export default {
   list: [
     'help',
     'whoami',
-    'ls',
-    'cd [directory]'
+    'ls [directory]',
+    'cd <directory>'
   ],
   exec(command, state, callback) {
     command = command.toLowerCase();
