@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Commands from "../../commands.js";
 import config from "../../config.js";
-import "./index.css";
+import "./index.scss";
 
 class Terminal extends Component {
   constructor() {
