@@ -5,6 +5,30 @@ import "./index.scss";
 
 const trips = [
   {
+    name: "Milan",
+    dates: [moment("2019-09-17"), moment("2019-09-23")],
+    picture:
+      "http://www.agency11.es/wp-content/uploads/2018/12/milan-duomo-1-fullsize__1280x720.jpg"
+  },
+  {
+    name: "Berlin",
+    dates: [moment("2019-09-12"), moment("2019-09-17")],
+    picture:
+      "https://content.api.news/v3/images/bin/13571ce51862600ed9b874a1d098fd39?width=1280"
+  },
+  {
+    name: "Syracuse",
+    dates: [moment("2019-09-06"), moment("2019-09-12")],
+    picture:
+      "http://www.sicilyexperiencediscovery.com/images/siracusa/gallery/SICILY_Siracusa_UNESCO_Ortigia_Eastt-Side-Beach.jpg"
+  },
+  {
+    name: "Milan",
+    dates: [moment("2019-07-30"), moment("2019-09-06")],
+    picture:
+      "http://www.agency11.es/wp-content/uploads/2018/12/milan-duomo-1-fullsize__1280x720.jpg"
+  },
+  {
     name: "Berlin",
     dates: [moment("2019-07-25"), moment("2019-07-30")],
     picture:
